@@ -58,6 +58,12 @@ public class Main {
         System.out.println("Conteúdos Concluidos João:" + devJoao.getConteudosConcluidos());
         System.out.println("XP:" + devJoao.calcularTotalXp());
 
+        devCamila.seguirDev(devJoao);
+        System.out.println(devCamila.getNome() +" segue os Devs :" + devCamila.getDevsSeguindo());
+
+        devJoao.seguirDev(devCamila);
+        System.out.println(devJoao.getNome() +" segue os Devs :" + devJoao.getDevsSeguindo());
+
     }
 
 }
